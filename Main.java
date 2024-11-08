@@ -10,8 +10,8 @@ public class Main {
 	    inventory_control.addStock(test_prescription);
 
 	    System.out.println("TEST PRESCRIPTION:\n" + test_prescription);
-	    System.out.println("INVENTORY:\n" + inventory_control.m_inventory);
-	    System.out.println("ORDERS:\n" + inventory_control.m_orders);
+	    System.out.println("INVENTORY:\n" + inventory_control.inventory);
+	    System.out.println("ORDERS:\n" + inventory_control.orders);
 
 	    AutoOrder auto_order = new AutoOrder(15, 100, "Test Pres");
 	    inventory_control.addAutoOrder(auto_order);
@@ -20,6 +20,6 @@ public class Main {
 	    inventory_control.updateAutoOrders();
 	    inventory_control.updateDeliveries();
 
-	    System.out.println("INVENTORY END:\n" + inventory_control.m_inventory);
+	    System.out.println("INVENTORY END:\n" + inventory_control.inventory);
     }
 }
